@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fffdf5, #ffeef2);
+    color: #4d4d4d;
+}
+
+.encabezado {
+    background-color: #ffb6c1;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.volver {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ff8fa3;
+    padding: 9px 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.volver:hover {
+    background-color: #ff6f89;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.titulo-resenas {
+    text-align: center;
+    color: #e86f8a;
+    font-size: 30px;
+    margin: 45px 20px 30px;
+}
+
+.lista-resenas {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.resena {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid #ffb6c1;
+    transition: 0.3s;
+}
+
+.resena:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.estrellas {
+    color: #ffc107;
+    font-size: 25px;
+    margin: 0 0 15px;
+    letter-spacing: 3px;
+}
+
+.comentario {
+    font-size: 17px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.autor {
+    text-align: right;
+    font-weight: bold;
+    color: #e86f8a;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .lista-resenas {
+        grid-template-columns: 1fr;
+    }
+
+    .volver {
+        position: static;
+        display: inline-block;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .volver:hover {
+        transform: scale(1.05);
+    }
+
+    .encabezado h1 {
+        font-size: 28px;
+    }
+}
