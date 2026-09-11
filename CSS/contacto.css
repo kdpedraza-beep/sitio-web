@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdf5;
+    color: #4d4d4d;
+}
+
+.encabezado {
+    background-color: #ffb6c1;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.volver {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ff8fa3;
+    padding: 8px 15px;
+    border-radius: 10px;
+}

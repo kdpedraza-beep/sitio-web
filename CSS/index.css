@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdf5;
+    color: #4d4d4d;
+}
+
+.encabezado {
+    background-color: #ffb6c1;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.bienvenida h2 {
+    color: #ff8fa3;
+}
+
+.bienvenida p {
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+.bienvenida img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.intereses {
+    text-align: center;
+    padding: 20px 20px 50px 20px;
+}
+
+.intereses h3 {
+    color: #77dd77;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boton-productos {
+    background-color: #ffb6c1;
+}
+
+.boton-contacto {
+    background-color: #fff2a8;
+    color: #7a6b00;
+}
+
+.boton-reseñas {
+    background-color: #b5e8b5;
+    color: #256029;
+}
