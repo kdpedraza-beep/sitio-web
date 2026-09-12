@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fffdf5;
+    background: linear-gradient(135deg, #fffdf5, #ffeef2);
     color: #4d4d4d;
 }
 
@@ -10,6 +10,8 @@ body {
     width: 100%;
     padding: 25px 0;
     text-align: center;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .encabezado h1 {
@@ -27,6 +29,115 @@ body {
     color: #ffffff;
     font-weight: bold;
     background-color: #ff8fa3;
-    padding: 8px 15px;
+    padding: 9px 16px;
     border-radius: 10px;
+    transition: 0.3s;
 }
+
+.volver:hover {
+    background-color: #ff6f89;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.titulo-contacto {
+    text-align: center;
+    color: #e86f8a;
+    font-size: 30px;
+    margin: 45px 20px 30px;
+}
+
+.info-contacto {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.dato {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+    border-left: 6px solid #ffb6c1;
+    transition: 0.3s;
+}
+
+.dato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dato h3 {
+    color: #e86f8a;
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.dato p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.redes {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    text-align: center;
+}
+
+.redes h3 {
+    color: #e86f8a;
+    font-size: 24px;
+}
+
+.botones-redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.boton-redes {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #ff8fa3;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-redes:hover {
+    background-color: #e86f8a;
+    transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+    .info-contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .volver {
+        position: static;
+        display: inline-block;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .volver:hover {
+        transform: scale(1.05);
+    }
+
+    .encabezado h1 {
+        font-size: 28px;
+    }
+
+    .botones-redes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
