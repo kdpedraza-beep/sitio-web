@@ -31,12 +31,37 @@ body {
     background-color: #ff8fa3;
     padding: 9px 16px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .volver:hover {
     background-color: #ff6f89;
-    transform: translateY(-50%) scale(1.05);
+}
+
+.menu {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #e86f8a;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ff8fa3;
+    transform: scale(1.08);
 }
 
 .titulo-contacto {
@@ -61,11 +86,11 @@ body {
     border-radius: 18px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
     border-left: 6px solid #ffb6c1;
-    transition: 0.3s;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .dato:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -107,12 +132,16 @@ body {
     padding: 12px 25px;
     border-radius: 12px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: background-color 0.2s linear, letter-spacing 0.2s linear;
 }
 
 .boton-redes:hover {
     background-color: #e86f8a;
-    transform: scale(1.05);
+    letter-spacing: 1px;
+}
+
+#contacto-principal {
+    padding-bottom: 20px;
 }
 
 @media (max-width: 700px) {
@@ -127,8 +156,11 @@ body {
         margin-bottom: 10px;
     }
 
-    .volver:hover {
-        transform: scale(1.05);
+    .menu {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin-top: 10px;
     }
 
     .encabezado h1 {
@@ -140,4 +172,3 @@ body {
         align-items: center;
     }
 }
-

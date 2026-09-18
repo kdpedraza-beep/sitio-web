@@ -31,12 +31,37 @@ body {
     background-color: #ff8fa3;
     padding: 9px 16px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .volver:hover {
     background-color: #ff6f89;
-    transform: translateY(-50%) scale(1.05);
+}
+
+.menu {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #e86f8a;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ff8fa3;
+    transform: scale(1.08);
 }
 
 .titulo-resenas {
@@ -62,6 +87,7 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
     border-top: 5px solid #ffb6c1;
     transition: 0.3s;
+    animation: aparecer 0.6s ease-in;
 }
 
 .resena:hover {
@@ -74,6 +100,7 @@ body {
     font-size: 25px;
     margin: 0 0 15px;
     letter-spacing: 3px;
+    animation: brillar 2s infinite;
 }
 
 .comentario {
@@ -89,6 +116,37 @@ body {
     font-weight: bold;
     color: #e86f8a;
     margin: 0;
+    animation: entrar 1s ease-out 0.3s backwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes brillar {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.4; }
+}
+
+@keyframes entrar {
+    0%   { transform: translateX(30px); opacity: 0; }
+    80%  { transform: translateX(-3px); opacity: 1; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.resena:first-child {
+    border-top-color: #ff8fa3;
+}
+
+.resena:nth-child(even) {
+    background-color: #fffafa;
+}
+
+.comentario::before {
+    content: "“ ";
+    font-weight: bold;
+    color: #ffb6c1;
 }
 
 @media (max-width: 700px) {
@@ -103,8 +161,11 @@ body {
         margin-bottom: 10px;
     }
 
-    .volver:hover {
-        transform: scale(1.05);
+    .menu {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin-top: 10px;
     }
 
     .encabezado h1 {
