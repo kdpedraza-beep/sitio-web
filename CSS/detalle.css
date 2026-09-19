@@ -5,7 +5,6 @@ body {
     color: #4d4d4d;
 }
 
-/* Selector de clase, reutilizado del encabezado de las otras páginas */
 .encabezado {
     background-color: #ffb6c1;
     width: 100%;
@@ -14,14 +13,12 @@ body {
     position: relative;
 }
 
-/* Selector por etiqueta */
 h1 {
     margin: 0;
     color: #ffffff;
     font-size: 32px;
 }
 
-/* Selector por id */
 #volver-productos {
     position: absolute;
     left: 20px;
@@ -35,7 +32,6 @@ h1 {
     border-radius: 10px;
 }
 
-/* Selector por id */
 #contenido-detalle {
     max-width: 500px;
     margin: 30px auto;
@@ -49,18 +45,15 @@ h1 {
     border-radius: 15px;
 }
 
-/* Selector por etiqueta */
 h2 {
     color: #ff8fa3;
 }
 
-/* Selector por etiqueta */
 h3 {
     color: #77dd77;
     margin-top: 25px;
 }
 
-/* Selector de clase */
 .lista-ingredientes,
 .lista-precios {
     list-style: none;

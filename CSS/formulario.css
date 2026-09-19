@@ -32,7 +32,6 @@ h1 {
     border-radius: 10px;
 }
 
-/* Selector por id */
 #contenedor-formulario {
     max-width: 400px;
     margin: 40px auto;
@@ -44,13 +43,11 @@ h2 {
     color: #ff8fa3;
 }
 
-/* Selector de clase */
 .campo {
     text-align: left;
     margin-bottom: 15px;
 }
 
-/* Selector por etiqueta */
 label {
     display: block;
     margin-bottom: 5px;
@@ -58,7 +55,6 @@ label {
     color: #256029;
 }
 
-/* Selector por etiqueta */
 input {
     width: 100%;
     padding: 10px;
