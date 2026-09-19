@@ -124,3 +124,26 @@ body {
         margin-top: 10px;
     }
 }
+
+/* Selector por etiqueta */
+a {
+    text-decoration: none;
+}
+
+/* Selector de clase para el enlace que envuelve la imagen y el nombre */
+.enlace-producto {
+    color: inherit;
+    display: block;
+}
+
+/* Selector de clase para el botón comprar, mismo estilo que tenía el button */
+.boton-comprar {
+    display: inline-block;
+    background-color: #b5e8b5;
+    color: #256029;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdf5;
+    color: #4d4d4d;
+}
+
+.encabezado {
+    background-color: #ffb6c1;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+#volver-productos {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ff8fa3;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+/* Selector por id */
+#contenedor-formulario {
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px 50px 20px;
+}
+
+h2 {
+    color: #ff8fa3;
+}
+
+/* Selector de clase */
+.campo {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Selector por etiqueta */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #256029;
+}
+
+/* Selector por etiqueta */
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff2a8;
+    box-sizing: border-box;
+}
+
+/* Selector por etiqueta */
+button {
+    background-color: #b5e8b5;
+    color: #256029;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}

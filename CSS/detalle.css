@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdf5;
+    color: #4d4d4d;
+}
+
+/* Selector de clase, reutilizado del encabezado de las otras páginas */
+.encabezado {
+    background-color: #ffb6c1;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Selector por etiqueta */
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+/* Selector por id */
+#volver-productos {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ff8fa3;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+/* Selector por id */
+#contenido-detalle {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 20px 50px 20px;
+}
+
+#contenido-detalle img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+/* Selector por etiqueta */
+h2 {
+    color: #ff8fa3;
+}
+
+/* Selector por etiqueta */
+h3 {
+    color: #77dd77;
+    margin-top: 25px;
+}
+
+/* Selector de clase */
+.lista-ingredientes,
+.lista-precios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-ingredientes li,
+.lista-precios li {
+    background-color: #ffffff;
+    border: 2px solid #fff2a8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+/* Selector de clase para el botón comprar */
+.boton-comprar {
+    display: inline-block;
+    background-color: #b5e8b5;
+    color: #256029;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
